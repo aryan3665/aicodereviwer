@@ -1,0 +1,264 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0e101c, #15172b);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.3s ease;
+    /* Smooth background transition */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 255, 0.05);
+    /* Subtle glowing overlay */
+    pointer-events: none;
+    /* Allows interaction with underlying elements */
+    z-index: -1;
+    /* Place behind other content */
+}
+
+.container {
+    max-width: 750px;
+    width: 100%;
+    background: #1f2333;
+    padding: 2.5rem 3rem;
+    /* Slightly increased padding */
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1);
+    /* More pronounced shadow */
+    border: 1px solid #2d2f4a;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    /* Container hover effects */
+}
+
+.container:hover {
+    box-shadow: 0 12px 35px rgba(0, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    /* Slightly larger heading */
+    margin-bottom: 2rem;
+    /* Increased bottom margin */
+    color: #00e6e6;
+    text-shadow: 0 0 8px rgba(0, 230, 230, 0.5);
+    /* Subtle text glow */
+}
+
+label {
+    display: block;
+    margin-top: 1.25rem;
+    /* Slightly increased top margin */
+    font-weight: 600;
+    /* Semi-bold font weight */
+    color: #d4d4d4;
+    /* Slightly lighter label color */
+    transition: color 0.2s ease;
+}
+
+label:hover {
+    color: #00bcd4;
+    /* Label hover color */
+}
+
+select,
+textarea,
+button {
+    width: 100%;
+    margin-top: 0.75rem;
+    /* Slightly increased top margin */
+    font-size: 1.05rem;
+    /* Slightly larger font size */
+    border-radius: 0.5rem;
+    border: none;
+    font-family: inherit;
+    transition: box-shadow 0.2s ease;
+}
+
+select {
+    padding: 0.7rem;
+    /* Slightly increased padding */
+    background-color: #2e314a;
+    color: #ffffff;
+    cursor: pointer;
+    /* Indicate it's interactive */
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+textarea {
+    padding: 1.1rem;
+    /* Slightly increased padding */
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #33364d;
+    /* Added subtle border */
+    margin-top: 1rem;
+    resize: vertical;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 220px;
+    /* Slightly increased minimum height */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+    border-color: #00bcd4;
+    /* Highlight border on focus */
+}
+
+button {
+    background: #00bcd4;
+    color: #1a1a1a;
+    /* Slightly darker text for better contrast */
+    font-weight: bold;
+    padding: 0.8rem 1.2rem;
+    /* Adjusted padding */
+    margin-top: 2rem;
+    /* Increased top margin */
+    transition: background 0.3s ease, transform 0.2s, box-shadow 0.2s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.25);
+    /* More prominent shadow */
+    cursor: pointer;
+    /* Indicate it's clickable */
+}
+
+button:hover {
+    background: #00e6e6;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.35);
+    /* Enhanced hover shadow */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+    /* Focus ring */
+}
+
+#responseArea {
+    white-space: pre-wrap;
+    background: #111324;
+    color: #cceeff;
+    padding: 1.2rem;
+    /* Slightly increased padding */
+    border-radius: 0.75rem;
+    margin-top: 2.5rem;
+    /* Increased top margin */
+    border: 1px solid #00bcd4;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+    /* Subtle shadow */
+    font-family: 'Consolas', Monaco, monospace;
+    /* More readable monospace font */
+    line-height: 1.6;
+    /* Improved line height for readability */
+}
+/* Toggle Switch Style */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #00e0e0;
+}
+
+input:checked+.slider:before {
+    transform: translateX(24px);
+}
+/* Light Theme */
+body.light {
+    background: #97afc7;
+    color: #222;
+}
+
+body.light .container {
+    background: #ffffff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+    color: #000;
+}
+
+body.light textarea,
+body.light select {
+    background: #f4f4f4;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+body.light button {
+    background: linear-gradient(90deg, #31d400, #00e0e0);
+    color: #000;
+}
+
+body.light #responseArea {
+    background: #eef6fa;
+    color: #000;
+    border: 1px solid #00c0c0;
+}
+
+/* Spinner styling or animated dots (optional) */
+.loader {
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}

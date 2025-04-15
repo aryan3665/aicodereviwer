@@ -33,7 +33,7 @@ It’s designed to help **beginners**, **non-English medium students**, and **cu
 |------------|------------------------|
 | Frontend   | HTML, CSS, JavaScript  |
 | Backend    | Node.js, Express.js    |
-| AI Model   | Groq (Gemma, Mixtral) or OpenAI |
+| AI Model   | Groq (Gemma, llma) or OpenAI |
 
 ---
 

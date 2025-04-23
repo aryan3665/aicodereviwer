@@ -1,4 +1,4 @@
-# 🤖 DevBuddy
+ # 🤖 DevBuddy
 
 **DevBuddy** is an AI-powered web tool that explains and reviews code (C++, Python, JavaScript, and more) with multi-level understanding — **Beginner (ELI5)**, **Intermediate**, and **Expert**.  
 It’s designed to help **beginners**, **non-English medium students**, and **curious developers** get code explanations, error insights, and optimization tips instantly.
@@ -23,6 +23,8 @@ It’s designed to help **beginners**, **non-English medium students**, and **cu
 ##TEAM MEMBERS
  1) ARYAN TRIPATHI
   2) PRATIK DUBEY
+##Team name
+  codewar
 
 ## 🎥 Demo Video
 

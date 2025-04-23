@@ -20,6 +20,10 @@ It’s designed to help **beginners**, **non-English medium students**, and **cu
 
 ---
 
+##TEAM MEMBERS
+ ARYAN TRIPATHI
+ PRATIK DUBEY
+
 ## 🎥 Demo Video
 
 👉 [Watch Demo](https://youtu.be/c82sG6FANZk?si=1V4qkt7lm3yxSgMx)  

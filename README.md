@@ -21,8 +21,8 @@ It’s designed to help **beginners**, **non-English medium students**, and **cu
 ---
 
 ##TEAM MEMBERS
- ARYAN TRIPATHI
- PRATIK DUBEY
+ 1) ARYAN TRIPATHI
+  2) PRATIK DUBEY
 
 ## 🎥 Demo Video
 
